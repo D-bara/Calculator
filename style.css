@@ -1,0 +1,72 @@
+main {
+  display: flex;
+  justify-content: space-around;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.calculator {
+  width: calc((40px + 8px) * 4 - 8px + 32px);
+  margin: 36px auto;
+  padding: 16px;
+  background: #ddd;
+}
+
+.result {
+  width: 100%;
+  padding: 2px 8px;
+  border: solid 1px black;
+  text-align: right;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.control {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.btn {
+  width: 40px;
+  height: 40px;
+  background: skyblue;
+  border: solid black 1px;
+  box-shadow: 0 4px rgb(77, 131, 153);
+}
+
+.btn:active {
+  opacity: .6;
+  transform: translateY(3px);
+  box-shadow: 0 1px rgb(77, 131, 153);
+}
+
+.btn.select {
+  opacity: .6;
+  transform: translateY(3px);
+  box-shadow: 0 1px rgb(77, 131, 153);
+}
+
+.mul {
+  display: inline-block;
+  transform: rotate(45deg);
+}
+
+.flex2 {
+  flex: 2;
+}
+
+.memo {
+  width: 200px;
+  margin: 32px 0;
+  font-size: 20px;
+}
+
+.memo-clear {
+  margin: 0 auto;
+  padding: 4px 8px;
+  border-radius: 8px;
+  background: rgb(255, 85, 85);
+  font-size: 14px;
+}
