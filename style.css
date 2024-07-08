@@ -1,13 +1,18 @@
+body {
+  padding: 32px;
+}
+
 main {
   display: flex;
   justify-content: space-around;
+  gap: 16px;
   max-width: 600px;
   margin: 0 auto;
 }
 
 .calculator {
   width: calc((40px + 8px) * 4 - 8px + 32px);
-  margin: 36px auto;
+  margin: 0 auto;
   padding: 16px;
   background: #ddd;
 }
@@ -34,6 +39,7 @@ main {
   background: skyblue;
   border: solid black 1px;
   box-shadow: 0 4px rgb(77, 131, 153);
+  user-select: none;
 }
 
 .btn:active {
@@ -57,6 +63,11 @@ main {
   flex: 2;
 }
 
+.memo-container {
+  display: flex;
+  flex-direction: column;
+}
+
 .memo {
   width: 200px;
   margin: 32px 0;
@@ -69,4 +80,15 @@ main {
   border-radius: 8px;
   background: rgb(255, 85, 85);
   font-size: 14px;
+}
+
+@media (max-width: 480px) {
+  main {
+    display: block;
+    text-align: center;
+  }
+
+  .memo {
+    margin: 32px auto;
+  }
 }
